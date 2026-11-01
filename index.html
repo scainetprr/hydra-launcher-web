@@ -743,6 +743,19 @@
       <div class="cl-grid">
         <div class="cl-card reveal">
           <div class="cl-head">
+            <span class="cl-version">v1.3.28</span>
+            <span class="cl-date">Noviembre 2026</span>
+          </div>
+          <h3>Soporte NeoForge 1-click</h3>
+          <ul class="cl-list">
+            <li class="new">Nuevo loader "NeoForge (1-click)" en el selector de versiones: instala la última versión estable compatible con tu Minecraft con el instalador oficial de NeoForge</li>
+            <li class="fixed">Arreglado el error HTTP 400 al lanzar versiones que ya tienen un loader instalado (p. ej. neoforge-21.1.265): ahora se detectan y se lanzan directas sin reinstalar nada</li>
+            <li class="fixed">NeoForge recibe correctamente sus argumentos JVM al arrancar vía Hydra (module path y módulos de BootstrapLauncher)</li>
+            <li class="fixed">Instalador con tema cyberpunk nuevo, actualizador con mensaje más amigable y fix del botón Jugar quedándose atascado</li>
+          </ul>
+        </div>
+        <div class="cl-card reveal">
+          <div class="cl-head">
             <span class="cl-version">v1.3.26</span>
             <span class="cl-date">Octubre 2026</span>
           </div>
@@ -1629,10 +1642,10 @@
     // Download buttons
     const REPO = 'https://github.com/scainetprr/hydra-launcher-web';
     const dl = (url) => window.open(url, '_blank');
-  document.getElementById('heroDownload').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.27/Hydra-Launcher-Setup-v1.3.27.exe'));
-  document.getElementById('heroPortable').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.27/Hydra-Launcher-1.3.27-portable.zip'));
-  document.getElementById('dlExe').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.27/Hydra-Launcher-Setup-v1.3.27.exe'));
-  document.getElementById('dlZip').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.27/Hydra-Launcher-1.3.27-portable.zip'));
+  document.getElementById('heroDownload').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.28/Hydra-Launcher-Setup-v1.3.28.exe'));
+  document.getElementById('heroPortable').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.28/Hydra-Launcher-1.3.28-portable.zip'));
+  document.getElementById('dlExe').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.28/Hydra-Launcher-Setup-v1.3.28.exe'));
+  document.getElementById('dlZip').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.28/Hydra-Launcher-1.3.28-portable.zip'));
     document.getElementById('dlSrc').addEventListener('click', () => dl(REPO));
 
     // Newsletter
