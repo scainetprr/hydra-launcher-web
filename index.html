@@ -743,6 +743,17 @@
       <div class="cl-grid">
         <div class="cl-card reveal">
           <div class="cl-head">
+            <span class="cl-version">v1.3.29</span>
+            <span class="cl-date">Noviembre 2026</span>
+          </div>
+          <h3>Fix: NeoForge se mostraba como Fabric</h3>
+          <ul class="cl-list">
+            <li class="fixed">Arreglado el badge de loader: neoforge-21.1.265 aparecía como FABRIC porque NeoForge incluye librerías de net.fabricmc (usa Mixin)</li>
+            <li class="fixed">La versión neoforge ahora aparece en el filtro NeoForge del navegador de versiones (y ya no aparece de más bajo Fabric)</li>
+          </ul>
+        </div>
+        <div class="cl-card reveal">
+          <div class="cl-head">
             <span class="cl-version">v1.3.28</span>
             <span class="cl-date">Noviembre 2026</span>
           </div>
@@ -1642,10 +1653,10 @@
     // Download buttons
     const REPO = 'https://github.com/scainetprr/hydra-launcher-web';
     const dl = (url) => window.open(url, '_blank');
-  document.getElementById('heroDownload').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.28/Hydra-Launcher-Setup-v1.3.28.exe'));
-  document.getElementById('heroPortable').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.28/Hydra-Launcher-1.3.28-portable.zip'));
-  document.getElementById('dlExe').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.28/Hydra-Launcher-Setup-v1.3.28.exe'));
-  document.getElementById('dlZip').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.28/Hydra-Launcher-1.3.28-portable.zip'));
+  document.getElementById('heroDownload').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.29/Hydra-Launcher-Setup-v1.3.29.exe'));
+  document.getElementById('heroPortable').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.29/Hydra-Launcher-1.3.29-portable.zip'));
+  document.getElementById('dlExe').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.29/Hydra-Launcher-Setup-v1.3.29.exe'));
+  document.getElementById('dlZip').addEventListener('click', () => dl(REPO+'/releases/download/v1.3.29/Hydra-Launcher-1.3.29-portable.zip'));
     document.getElementById('dlSrc').addEventListener('click', () => dl(REPO));
 
     // Newsletter
